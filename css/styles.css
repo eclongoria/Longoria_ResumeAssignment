@@ -1,0 +1,76 @@
+/* 
+COLOR PALETTE:
+Navy Blue #05445E
+Blue Grotto #189AB4
+Blue Green #75E6DA
+Baby Blue #D4F1F4
+*/
+
+/* GLOBAL STYLES
+------------------------------------------------*/
+body {
+    background: #F8F7FF;
+}
+
+/*links*/
+a {
+    color:#189AB4;
+}
+
+a:hover {
+    color:#75E6DA;
+    text-decoration: none;
+}
+
+footer a {
+    color:#75E6DA;
+}
+
+footer a:hover {
+    color:#D4F1F4;
+    text-decoration: none;
+}
+
+.btn {
+    background:#05445E;
+    color:#F8F7FF;
+}
+
+/* HOME 
+------------------------------------------------*/
+.home {
+    background: url(../images/cherryblossoms.jpg) no-repeat;
+    background-size: cover;
+}
+
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
+}
+
+/* RESUME
+------------------------------------------------*/
+
+
+/* Profile
+------------------------------------------------*/
+
+
+/* Projects
+------------------------------------------------*/
+
+
+/* Work experience
+------------------------------------------------*/
+
+
+/* Education
+------------------------------------------------*/
+
+
+/* FOOTER
+------------------------------------------------*/
+
+footer {
+    background: #05445E;
+    color:#F8F7FF;
+}
