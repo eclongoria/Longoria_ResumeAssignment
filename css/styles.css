@@ -1,45 +1,96 @@
 /* 
 COLOR PALETTE:
-Navy Blue #05445E
-Blue Grotto #189AB4
-Blue Green #75E6DA
-Baby Blue #D4F1F4
+
+Rosewater #E8B4B8
+Dusty Rose #EED6D3
+Coffee Pot #A49393
+Coffee Pot #67595E
 */
 
 /* GLOBAL STYLES
 ------------------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     background: #F8F7FF;
+    margin:0;
+    font-family: "quasimoda", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.25;
+}
+
+h1 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    text-shadow: #E8B4B8 1.5px 2.5px .75px;
+}
+
+h2 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;  
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
 }
 
 /*links*/
 a {
-    color:#189AB4;
+    color:#A49393;
 }
 
 a:hover {
-    color:#75E6DA;
+    color:#E8B4B8;
     text-decoration: none;
 }
 
 footer a {
-    color:#75E6DA;
+    color:#E8B4B8;
 }
 
 footer a:hover {
-    color:#D4F1F4;
+    color:#EED6D3;
     text-decoration: none;
 }
 
 .btn {
-    background:#05445E;
+    background:#67595E;
     color:#F8F7FF;
+    padding: 5px 15px;
+    border-radius: 3px;
 }
 
 /* HOME 
 ------------------------------------------------*/
 .home {
-    background: url(../images/cherryblossoms.jpg) no-repeat;
+    background: url(../images/cherryblossoms.jpg);
     background-size: cover;
 }
 
@@ -49,7 +100,20 @@ footer a:hover {
 
 /* RESUME
 ------------------------------------------------*/
+.home header::before {
+    background: url(../images/bookpages1000.jpg) bottom;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 325px;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
 
+.resume-section h2 {
+    border-bottom: 2px dashed #E8B4B8;
+}
 
 /* Profile
 ------------------------------------------------*/
@@ -57,20 +121,58 @@ footer a:hover {
 
 /* Projects
 ------------------------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 20px 0;
+    padding-left: 25px;
+}
 
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 
 /* Work experience
 ------------------------------------------------*/
-
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+    padding-left: 25px;
+}
 
 /* Education
 ------------------------------------------------*/
-
+.education {
+    padding-left:25px;
+}
 
 /* FOOTER
 ------------------------------------------------*/
 
 footer {
-    background: #05445E;
+    background: #67595E;
     color:#F8F7FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.socials {
+    list-style-type: none;
+    padding:0;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials img {
+    width:32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
