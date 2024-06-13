@@ -7,11 +7,56 @@ Coffee Pot #A49393
 Coffee Pot #67595E
 */
 
+/* NAVIGATION 
+------------------------------------------------*/
+#navbar {
+    width:100%;
+}
+
+#nav, #nav ul {
+    padding:10px;
+    margin:10px;
+    list-style: none;
+    line-height: 1;
+}
+
+#nav a {
+    display: block;
+    width: 130px;
+    text-decoration: none;
+}
+
+#nav li {
+    display:inline-block;
+    width: 135px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #F8F7FF;
+}
+
+#nav li ul {
+    position: absolute;
+    background: #F8F7FF;
+    padding: 10px;
+    width: 130px;
+    left:-999em;
+}
+
+#nav li:hover ul {
+    left: auto;
+    width: 210px;
+}
+
+#nav li ul li:hover {
+    background:#EED6D3;
+    display:block;
+    width: 180px;
+}
+
 /* GLOBAL STYLES
 ------------------------------------------------*/
-/* 
-  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*/
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
 html {
     box-sizing: border-box;
 }
@@ -142,15 +187,16 @@ footer a:hover {
     padding-left: 25px;
 }
 
+
 /* Education
 ------------------------------------------------*/
 .education {
     padding-left:25px;
 }
 
+
 /* FOOTER
 ------------------------------------------------*/
-
 footer {
     background: #67595E;
     color:#F8F7FF;
