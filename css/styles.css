@@ -13,9 +13,14 @@ Coffee Pot #67595E
     width:100%;
 }
 
+#nav {
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    padding: 0;
+}
+
 #nav, #nav ul {
-    padding:10px;
-    margin:10px;
     list-style: none;
     line-height: 1;
 }
@@ -24,27 +29,30 @@ Coffee Pot #67595E
     display: block;
     width: 130px;
     text-decoration: none;
+    margin: 5px;
+    padding: 5px;
 }
 
 #nav li {
     display:inline-block;
     width: 135px;
-    padding: 10px;
-    margin: 5px;
     background-color: #F8F7FF;
+    margin: 10px;
 }
 
 #nav li ul {
-    position: absolute;
+    position: relative;
+    display: none;
     background: #F8F7FF;
     padding: 10px;
     width: 130px;
-    left:-999em;
 }
 
 #nav li:hover ul {
     left: auto;
     width: 210px;
+    display: block;
+    position: absolute;
 }
 
 #nav li ul li:hover {
