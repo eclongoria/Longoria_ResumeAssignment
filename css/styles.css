@@ -59,6 +59,7 @@ Coffee Pot #67595E
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
   *, *:before, *:after {
@@ -75,29 +76,37 @@ body {
     font-family: "quasimoda", sans-serif;
     font-weight: 200;
     font-style: normal;
+    font-size: 1.5rem;
     line-height: 1.25;
+}
+
+h1, h2, h3 {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 h1 {
     font-family: "quasimoda", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 42px;
+    font-size: 7rem;
     text-shadow: #E8B4B8 1.5px 2.5px .75px;
+    line-height: 1.2;
 }
 
 h2 {
     font-family: "quasimoda", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 28px;
+    font-size: 3.6rem;
 }
 
 h3 {
     font-family: "quasimoda", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 22px;  
+    font-size: 2.4rem;  
 }
 
 .content-wrapper {
@@ -130,6 +139,8 @@ footer a:hover {
     color:#F8F7FF;
     padding: 5px 15px;
     border-radius: 3px;
+    line-height: 1.5;
+    display: inline-block;
 }
 
 /* HOME 
@@ -151,6 +162,7 @@ footer a:hover {
     content: "";
     display: block;
     height: 325px;
+    margin-bottom: 1.5em;
 }
 .resume-section {
     margin-bottom: 50px;
@@ -158,6 +170,7 @@ footer a:hover {
 
 .resume-section h2 {
     border-bottom: 2px dashed #E8B4B8;
+    margin-bottom:0.5em;
 }
 
 /* Profile
@@ -185,15 +198,27 @@ footer a:hover {
     grid-template-columns: 300px 1fr;
     column-gap: 20px;
     padding-left: 25px;
+    margin: 30px 0;
 }
 
+.work-details p {
+    margin:0;
+}
+
+.work-summary p:first-child {
+    margin-top: 0;
+}
 
 /* Education
 ------------------------------------------------*/
 .education {
     padding-left:25px;
+    margin: 30px 0;
 }
 
+.education p {
+    margin: 0;
+}
 
 /* FOOTER
 ------------------------------------------------*/
