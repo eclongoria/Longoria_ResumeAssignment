@@ -173,30 +173,60 @@ footer a:hover {
     margin-bottom:0.5em;
 }
 
-/* Profile
-------------------------------------------------*/
-
+@media screen and (max-width:500px) {
+    .home header::before {
+        height:200px;
+    }
+    h1 {
+        font-size:5rem;
+    }
+    h2 {
+        font-size:2.6rem;
+    }
+}
 
 /* Projects
 ------------------------------------------------*/
 .project-item {
-    display: flow-root;
     margin: 20px 0;
     padding-left: 25px;
 }
 
 .project-item img {
     width: 300px;
-    float: left;
-    margin-right: 20px;
+}
+
+@media screen and (min-width:750px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:749px) {
+    .project-wrapper {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+    .project-item img {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .project-item img {
+        width:100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* Work experience
 ------------------------------------------------*/
 .work-item {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 20px;
     padding-left: 25px;
     margin: 30px 0;
 }
@@ -205,8 +235,15 @@ footer a:hover {
     margin:0;
 }
 
-.work-summary p:first-child {
-    margin-top: 0;
+@media screen and (min-width:850px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    } 
 }
 
 /* Education
@@ -225,9 +262,6 @@ footer a:hover {
 footer {
     background: #67595E;
     color:#F8F7FF;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
 }
 
 .socials {
@@ -246,4 +280,19 @@ footer {
 
 .socials img:hover {
     opacity: 0.5;
+}
+
+@media screen and (min-width:750px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width:749px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
